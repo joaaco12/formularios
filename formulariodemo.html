@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario demo</title>
+</head>
+
+<body>
+    <h1>
+        Formulario demo
+    </h1>
+    <h2>
+        Solicitando gustos a un cliente
+    </h2>
+
+    <!--
+    Para organizar el formulario utilizaremos etiquetas fieldset, legend y div. Todo el formulario debe ir dentro de la etiqueta form
+    -->
+
+    <form action="" method="post">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+                
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Gustos</legend>
+            <label for="gustos">Seleccionar un gusto</label>
+            <select name="gustos" id="gustos">
+                <option value="">Seleccionar un gusto</option>
+                <option value="musica">Musica</option>
+                <option value="cine">Cine</option>
+                <option value="deportes">Deportes</option>
+            </select>
+        </fieldset>
+        <input type="submit" value="Guardar">
+    </form>
+</body>
+
+</html>
